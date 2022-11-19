@@ -1,14 +1,11 @@
 <form action="/">
-  <div class="relative border-2 border-gray-100 m-4 rounded-lg">
-    <div class="absolute top-4 left-3">
-      <i class="fa fa-search text-gray-400 z-20 hover:text-gray-500"></i>
-    </div>
-    <input type="text" name="search" class="h-14 w-full pl-10 pr-20 rounded-lg z-0 focus:shadow focus:outline-none"
-      placeholder="Search Laravel Gigs..." />
-    <div class="absolute top-2 right-2">
-      <button type="submit" class="h-10 w-20 text-white rounded-lg bg-red-500 hover:bg-red-600">
-        Search
-      </button>
+  <div>
+    <label for="search" class="block text-sm font-medium text-gray-700">Quick search</label>
+    <div class="relative mt-1 flex items-center">
+      <input type="text" name="search" id="search" class="block w-full rounded-md border-gray-300 pr-12 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+      <div class="absolute inset-y-0 right-0 flex py-1.5 pr-1.5">
+        <kbd class="inline-flex items-center rounded border border-gray-200 px-2 font-sans text-sm font-medium text-gray-400">⌘K</kbd>
+      </div>
     </div>
   </div>
 </form>
